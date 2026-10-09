@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laboratorio DOM - Videojuegos</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
+</head>
+<body>
+    <main class="contenedor">
+        <header class="encabezado">
+            <p class="etiqueta">LABORATORIO JAVASCRIPT</p>
+            <h1 id="titulo">Catálogo de videojuegos</h1>
+            <p id="descripcion">Explora nuestros videojuegos destacados.</p>
+        </header>
+
+        <section class="panel">
+            <h2>Panel de control</h2>
+            <label for="nombre">Tu nombre</label>
+            <input type="text" id="nombre" placeholder="Escribe tu nombre">
+            <div class="acciones">
+                <button onclick="saludar()">Saludar</button>
+                <button onclick="cambiarTitulo()">Cambiar título</button>
+                <button onclick="resaltarPrimero()">Destacar primero</button>
+                <button onclick="resaltarTodos()">Destacar todos</button>
+                <button onclick="restablecer()" class="secundario">Restablecer</button>
+            </div>
+            <p id="mensaje" aria-live="polite">Aquí aparecerán los mensajes.</p>
+        </section>
+
+        <section>
+            <h2>Juegos destacados</h2>
+            <div class="rejilla">
+                <article id="juego1" class="tarjeta">
+                    <span class="numero">01</span>
+                    <h3>Mundo Pixel</h3>
+                    <p>Exploración y aventuras.</p>
+                </article>
+                <article id="juego2" class="tarjeta">
+                    <span class="numero">02</span>
+                    <h3>Velocidad Turbo</h3>
+                    <p>Carreras y desafíos.</p>
+                </article>
+                <article id="juego3" class="tarjeta">
+                    <span class="numero">03</span>
+                    <h3>Reinos del Tiempo</h3>
+                    <p>Estrategia y decisiones.</p>
+                </article>
+            </div>
+            <p id="contador">Juegos destacados: 3</p>
+        </section>
+    </main>
+</body>
+</html>
